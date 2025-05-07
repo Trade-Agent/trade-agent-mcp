@@ -1,7 +1,6 @@
 # Trade Agent MCP Server
 
-**Endpoint:**  
-`https://mcp.thetradeagent.ai/sse`  
+**Endpoint:**  `https://mcp.thetradeagent.ai/sse`  
 **Mode:** Remote-only (no local deployment required)
 
 ## Overview
