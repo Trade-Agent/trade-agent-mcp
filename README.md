@@ -1,5 +1,9 @@
 # Trade Agent MCP Server
 
+<a href="https://glama.ai/mcp/servers/@Trade-Agent/trade-agent-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@Trade-Agent/trade-agent-mcp/badge" />
+</a>
+
 **Endpoint:**  `https://mcp.thetradeagent.ai/sse`  
 **Mode:** Remote-only (no local deployment required)
 
