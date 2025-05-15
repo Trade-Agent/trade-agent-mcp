@@ -9,25 +9,39 @@
 
 ## Overview
 
-The Trade Agent MCP Server provides a conversational trading interface for agents. It enables natural-language interaction with stock and crypto brokerages—agents can execute trades, query portfolio performance, and surface market insights by sending plain-English requests through the MCP protocol.
+The Trade Agent MCP Server brings stock and crypto trading support to agents. It enables natural-language interaction with stock and crypto brokerages—execute trades, query portfolio performance, and surface market insights by sending plain-English requests through the MCP protocol.
 
-This server is **remote-only**—you don't need to run anything locally to connect. Just point your MCP-compatible agent platform to the URL above.
+Supports Robinhood, E*TRADE, Coinbase, and Kraken. More to be added soon!
+
+This server is **remote** so you don't need to run anything locally to connect. Just point your MCP-compatible agent platform to the URL above.
 
 ---
 
-## Features
+## Tools
 
-- 💬 **Natural Language Trade Execution**  
+- 💬 **Create Trade**
+  Draft a trade order for review before submitting.
   Example: `"Buy $500 of Apple"` or `"Sell 10 shares of SPY"`
 
-- 🔐 **Secure Brokerage Integration**  
-  Supports Robinhood, E*TRADE, Coinbase, and Kraken. More to be added soon!
+- 💬 **Execute Trade**
+  Execute the trade on your brokerage.
+
+- 💬 **Show Account Details**
+  List your linked brokerages along with their current value and cash balance.
+  Example: `"Show my accounts"`
+
+- 💬 **Search Asset**
+  Get current price and metadata for any stock or cryptocurrency.
+  Example: `"How's Apple doing?"` or `"What's the price of TSLA?"`
 
 - 📊 **COMING SOON: Portfolio Queries**  
   Example: `"How is my portfolio doing?"` or `"What’s my exposure to tech?"`
 
 - 🔍 **COMING SOON: Market Queries**  
   Example: `"How is Berkshire performing relative to the S&P?"`
+
+- 🔍 **COMING SOON: Copy Trading**  
+  Example: `"Put $1000 in Nancy Pelosi's portfolio."`
 
 ---
 
