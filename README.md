@@ -11,7 +11,7 @@
 
 The Trade Agent MCP Server brings stock and crypto trading support to agents. It enables natural-language interaction with stock and crypto brokerages—execute trades, query portfolio performance, and surface market insights by sending plain-English requests through the MCP protocol.
 
-Supports Robinhood, E*TRADE, Coinbase, and Kraken. More to be added soon!
+Supports Charles Schwab, Robinhood, E*TRADE, Webull, Coinbase, and Kraken. More to be added soon!
 
 This server is **remote** so you don't need to run anything locally to connect. Just point your MCP-compatible agent platform to the URL above.
 
