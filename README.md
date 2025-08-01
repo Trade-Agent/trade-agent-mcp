@@ -20,8 +20,25 @@ This server is **remote** so you don't need to run anything locally to connect. 
 ## Tools
 
 - 💬 **Create Trade**
-  Draft a trade order for review before submitting.
-  Example: `"Buy $500 of Apple"` or `"Sell 10 shares of SPY"`
+  Creates a trade order to buy or sell an asset.
+
+  ORDER TYPES:
+  - **market** (default) → Executes immediately at current market price. No price fields required.
+  - **limit** → Executes only at a specific limit_price or better. Requires `limit_price`.
+  - **stop** → Triggers a market order when stop_price is reached. Requires `stop_price`.
+  - **stop_limit** → Triggers a limit order when stop_price is reached. Requires BOTH `stop_price` and `limit_price`.
+ 
+  EXAMPLES:
+- "Buy $1000 of Tesla"
+- "Buy $1000 of Tesla, but only if the price drops to $150 or lower"
+- "Sell 10 shares of Apple if the price falls to $140 or lower"
+- "Buy a share of Apple if it hits $200"
+- "Buy 10 shares of Apple if the price rises to $140, but don't pay more than $142 per share"
+
+  DEFAULTS:
+  If no amount is given, the user's default amount is used. If no account is provided, the user's default account is used. 
+  If no order type is given, it defaults to a market order. 
+  Depending on user settings, the trade may execute immediately or remain in draft state.
 
 - 💬 **Execute Trade**
   Execute the trade on your brokerage.
@@ -36,9 +53,6 @@ This server is **remote** so you don't need to run anything locally to connect. 
 
 - 📊 **COMING SOON: Portfolio Queries**  
   Example: `"How is my portfolio doing?"` or `"What’s my exposure to tech?"`
-
-- 🔍 **COMING SOON: Market Queries**  
-  Example: `"How is Berkshire performing relative to the S&P?"`
 
 - 🔍 **COMING SOON: Copy Trading**  
   Example: `"Put $1000 in Nancy Pelosi's portfolio."`
