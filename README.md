@@ -29,16 +29,17 @@ This server is **remote** so you don't need to run anything locally to connect. 
   - **stop_limit** → Triggers a limit order when stop_price is reached. Requires BOTH `stop_price` and `limit_price`.
  
   EXAMPLES:
-- "Buy $1000 of Tesla"
-- "Buy $1000 of Tesla, but only if the price drops to $150 or lower"
-- "Sell 10 shares of Apple if the price falls to $140 or lower"
-- "Buy a share of Apple if it hits $200"
-- "Buy 10 shares of Apple if the price rises to $140, but don't pay more than $142 per share"
+  - "Buy $1000 of Tesla"
+  - "Buy $1000 of Tesla, but only if the price drops to $150 or lower"
+  - "Sell 10 shares of Apple if the price falls to $140 or lower"
+  - "Buy a share of Apple if it hits $200"
+  - "Buy 10 shares of Apple if the price rises to $140, but don't pay more than $142 per share"
 
   DEFAULTS:
-  If no amount is given, the user's default amount is used. If no account is provided, the user's default account is used. 
-  If no order type is given, it defaults to a market order. 
-  Depending on user settings, the trade may execute immediately or remain in draft state.
+  - If no amount is given, your default amount is used.
+  - If no account is given, your default account is used. 
+  - If no order type is given, the trade is a market order. 
+  - If auto-execute is enabled in settings, the trade will execute immediately. Otherwise, it gets created in draft state and requires a call to `Execute Trade` to complete. This allows you to review and confirm trades.
 
 - 💬 **Execute Trade**
   Execute the trade on your brokerage.
