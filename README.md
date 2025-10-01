@@ -1,15 +1,16 @@
-# Trade Agent MCP Server
+# Trade It MCP Server
+(previously known as Trade Agent)
 
 <a href="https://glama.ai/mcp/servers/@Trade-Agent/trade-agent-mcp">
   <img width="380" height="200" src="https://glama.ai/mcp/servers/@Trade-Agent/trade-agent-mcp/badge" />
 </a>
 
-**Endpoint:**  `https://mcp.thetradeagent.ai/sse`  
+**Endpoint:**  `https://mcp.tradeit.app/sse`  
 **Mode:** Remote-only (no local deployment required)
 
 ## Overview
 
-The Trade Agent MCP Server brings stock and crypto trading support to agents. It enables natural-language interaction with stock and crypto brokerages—execute trades, query portfolio performance, and surface market insights by sending plain-English requests through the MCP protocol.
+The Trade It MCP Server brings stock and crypto trading support to agents. It enables natural-language interaction with stock and crypto brokerages—execute trades, query portfolio performance, and surface market insights by sending plain-English requests through the MCP protocol.
 
 Supports Charles Schwab, Robinhood, E*TRADE, Webull, Coinbase, and Kraken. More to be added soon!
 
@@ -62,11 +63,11 @@ This server is **remote** so you don't need to run anything locally to connect. 
 
 ## Getting Started
 
-1. First, create an account at https://thetradeagent.ai.
+1. First, create an account at https://tradeit.app.
 2. Sign up for the Pro plan's free trial.
 3. Connect your brokerage of choice.
 
 ## Connecting
-1. Connect your MCP client to `https://mcp.thetradeagent.ai/sse`.
+1. Connect your MCP client to `https://mcp.tradeit.app/sse`.
 2. Authenticate through the browser-based OAuth flow.
 3. You're now ready to start trading!
